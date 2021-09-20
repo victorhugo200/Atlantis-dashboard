@@ -1,0 +1,17 @@
+@mixin reponsivo ($dispositivo) {
+    @if $dispositivo=='t' {
+        @media screen and (max-width: 960px) {
+            @content;
+        }
+    }
+    @else if $dispositivo=='m' {
+        @media screen and (max-width: 580px) {
+            @content;
+        }
+    }
+    @else if $dispositivo=='mm' {
+        @media screen and (max-width: 400px) {
+            @content;
+        }
+    }
+}
