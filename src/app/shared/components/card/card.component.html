@@ -1,0 +1,20 @@
+<div class="card">
+    <div class="card-content">
+        <div class="card-info">
+            <h3 class="card-info__title">
+                {{ config.title}}
+            </h3>
+            <div class="card-info-content">
+                <div class="card-info-overview {{ config.typeImg}}">
+                    <div class="pi {{ config.icon }} icon"></div>
+                    <span class="text">{{ config.fee | percent: '1.2'}}</span>
+                </div>
+                <span class="card-info__subtitle" *ngIf="config.type  === 'percent'"> {{ config.number | percent: '1.2'}}</span>
+                <span class="card-info__subtitle" *ngIf="config.type  === 'currency'"> {{ config.number | currency}}</span>
+            </div>
+        </div>
+        <img *ngIf="config.typeImg === 'RED'" src="assets/img/linhas/line-red.svg" alt="">
+        <img *ngIf="config.typeImg === 'GREEN'" src="assets/img/linhas/line-green.svg" alt="">
+        <img *ngIf="config.typeImg === 'BLUE'" src="assets/img/linhas/line-aqua.svg" alt="">
+    </div>
+</div>
