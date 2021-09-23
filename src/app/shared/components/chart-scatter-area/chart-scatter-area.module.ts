@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ChartLinearScaleComponent } from './chart-linear-scale.component';
+
+import { ChartScatterAreaComponent } from './chart-scatter-area.component';
 import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
-  declarations: [ChartLinearScaleComponent],
+  declarations: [ChartScatterAreaComponent],
   imports: [
     CommonModule,
     ChartsModule
   ],
-  exports: [ChartLinearScaleComponent]
+  exports: [ChartScatterAreaComponent]
 })
-export class ChartLinearScaleModule { }
+export class ChartScatterAreaModule { }
