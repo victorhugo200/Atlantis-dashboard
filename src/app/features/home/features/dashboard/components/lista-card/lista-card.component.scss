@@ -1,5 +1,13 @@
+@import '../../../../../../../assets/scss/breakpoints';
 .lista {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
+    @include reponsivo(lp) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 }

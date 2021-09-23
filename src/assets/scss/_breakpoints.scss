@@ -1,5 +1,10 @@
 @mixin reponsivo ($dispositivo) {
-    @if $dispositivo=='t' {
+    @if $dispositivo=='lp' {
+        @media screen and (max-width: 1024px) {
+            @content;
+        }
+    }
+    @else if $dispositivo=='mt' {
         @media screen and (max-width: 960px) {
             @content;
         }
