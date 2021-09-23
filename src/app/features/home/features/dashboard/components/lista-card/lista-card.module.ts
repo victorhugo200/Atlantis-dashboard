@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ListaCardComponent } from './lista-card.component';
-import { CardModule } from 'src/app/shared/components/card/card.module';
+import { CardModule } from 'src/app/shared/components/cards/card/card.module';
+
 
 
 @NgModule({
