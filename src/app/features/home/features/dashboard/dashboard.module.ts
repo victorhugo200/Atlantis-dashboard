@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { DashboardComponent } from './dashboard.component';
 import { ListaCardModule } from './components/lista-card/lista-card.module';
-import { ChartPieModule } from 'src/app/shared/components/chart-pie/chart-pie.module';
-import { ChartBarModule } from 'src/app/shared/components/chart-bar/chart-bar.module';
-import { ChartDoughnutModule } from 'src/app/shared/components/chart-doughnut/chart-doughnut.module';
-import { ChartLinearScaleModule } from 'src/app/shared/components/chart-linear-scale/chart-linear-scale.module';
+
 import { CardChartBarModule } from 'src/app/shared/components/cards/card-chart-bar/card-chart-bar.module';
+import { CardChartPieModule } from 'src/app/shared/components/cards/card-chart-pie/card-chart-pie.module';
+import { CardChartDoughnutModule } from 'src/app/shared/components/cards/card-chart-doughnut/card-chart-doughnut.module';
+import { CardChartScatterAreaModule } from 'src/app/shared/components/cards/card-chart-scatter-area/card-chart-scatter-area.module';
 
 
 
@@ -16,10 +17,9 @@ import { CardChartBarModule } from 'src/app/shared/components/cards/card-chart-b
     CommonModule,
     ListaCardModule,
     CardChartBarModule,
-    ChartPieModule,
-    ChartBarModule,
-    ChartDoughnutModule,
-    ChartLinearScaleModule
+    CardChartPieModule,
+    CardChartScatterAreaModule,
+    CardChartDoughnutModule,
     
   ],
   exports: [DashboardComponent]

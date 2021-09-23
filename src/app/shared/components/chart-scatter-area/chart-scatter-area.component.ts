@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ChartDataSets, ChartOptions, ChartType } from 'chart.js';
 
 @Component({
-  selector: 'app-chart-linear-scale',
-  templateUrl: './chart-linear-scale.component.html',
-  styleUrls: ['./chart-linear-scale.component.scss']
+  selector: 'app-chart-scatter-area',
+  templateUrl: './chart-scatter-area.component.html',
+  styleUrls: ['./chart-scatter-area.component.scss']
 })
-export class ChartLinearScaleComponent implements OnInit {
+export class ChartScatterAreaComponent implements OnInit {
 
 
  

@@ -2,44 +2,15 @@
     <app-lista-card [lista]="x"></app-lista-card>
     <div class="lista">
 
-        <div class="card">
-            <h5 class="card__title">Porcentagem de variação</h5>
-            <div class="card-chart">
-                <app-chart-pie></app-chart-pie>
-            </div>
-        </div>
+        <app-card-chart-pie title="Pie hart"></app-card-chart-pie>
 
-        <app-card-chart-bar title="Bar chart"></app-card-chart-bar>
+        <app-card-chart-bar title="Bar Chart"></app-card-chart-bar>
 
-        <div class="card">
-            <h5 class="card__title">Doughnut Chart</h5>
-            <div class="card-chart">
-                <app-chart-doughnut></app-chart-doughnut>
-            </div>
-        </div>
+        <app-card-chart-doughnut title="Doughnut Chart"></app-card-chart-doughnut>
 
-        <div class="card">
-            <h5 class="card__title">Pie Chart</h5>
-            <div class="card-chart">
-                <app-chart-linear-scale></app-chart-linear-scale>
-            </div>
-        </div>
-
-        <div class="card">
-            <h5 class="card__title">Pie Chart</h5>
-            <div class="card-chart">
-                <app-chart-bar></app-chart-bar>
-            </div>
-        </div>
+        <app-card-chart-scatter-area title="Scatter Area"></app-card-chart-scatter-area>
 
 
-
-        <div class="card">
-            <h5 class="card__title">Pie Chart</h5>
-            <div class="card-chart">
-                <app-chart-bar></app-chart-bar>
-            </div>
-        </div>
     </div>
 
 </div>
