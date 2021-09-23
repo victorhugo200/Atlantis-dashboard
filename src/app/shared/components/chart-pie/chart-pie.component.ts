@@ -1,8 +1,7 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
 
-import {  ChartType } from 'chart.js';
-import { Label } from 'ng2-charts'
-
+import { ChartType } from "chart.js";
+import { Label } from "ng2-charts";
 
 @Component({
   selector: "app-chart-pie",
@@ -10,44 +9,39 @@ import { Label } from 'ng2-charts'
   styleUrls: ["./chart-pie.component.scss"],
 })
 export class ChartPieComponent implements OnInit {
+  @Input() labels: Label[] = ["A", "B", "C"];
 
+  @Input() data: number[] = [540, 325, 702, 425];
 
   pieChartOptions = {
     responsive: true,
     legend: {
-      position: 'top',
+      position: "top",
     },
     tooltips: {
       enabled: true,
-      mode: 'single',
+      mode: "single",
       callbacks: {
         label: function (tooltipItems, data) {
-          return data.datasets[0].data[tooltipItems.index] + ' %';
-        }
-      }
+          return data.datasets[0].data[tooltipItems.index] + " %";
+        },
+      },
     },
   };
 
-  pieChartLabels: Label[] = ['A', 'B', 'C'];
-
-  pieChartData: number[] = [540, 325, 702, 425];
-
-  pieChartType: ChartType = 'pie';
+  pieChartType: ChartType = "pie";
 
   pieChartLegend = true;
 
   pieChartPlugins = [];
 
   pieChartColors = [
-    
     {
-      backgroundColor: ['#36a2eb', '#ff6384', '#ffcd56', '#4bc0c0'],
+      backgroundColor: ["#36a2eb", "#ff6384", "#ffcd56", "#4bc0c0"],
     },
   ];
- 
-  constructor() {}
- 
 
+  constructor() {}
 
   ngOnInit() {}
 }

@@ -1,20 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { ChartDataSets, ChartOptions, ChartType } from 'chart.js';
+import { Component, Input, OnInit } from "@angular/core";
+import { ChartDataSets, ChartOptions, ChartType } from "chart.js";
 
 @Component({
-  selector: 'app-chart-scatter-area',
-  templateUrl: './chart-scatter-area.component.html',
-  styleUrls: ['./chart-scatter-area.component.scss']
+  selector: "app-chart-scatter-area",
+  templateUrl: "./chart-scatter-area.component.html",
+  styleUrls: ["./chart-scatter-area.component.scss"],
 })
 export class ChartScatterAreaComponent implements OnInit {
-
-
- 
-  public scatterChartOptions: ChartOptions = {
-    responsive: true,
-  };
-
-  public scatterChartData: ChartDataSets[] = [
+  @Input() scatterChartData: ChartDataSets[] = [
     {
       data: [
         { x: 14.2, y: 215 },
@@ -28,23 +21,20 @@ export class ChartScatterAreaComponent implements OnInit {
         { x: 23.4, y: 544 },
         { x: 18.1, y: 421 },
       ],
-      label: 'A',
+      label: "A",
       pointRadius: 10,
-      backgroundColor: '#ff6384',
-      borderColor: '#fff'
+      backgroundColor: "#ff6384",
+      borderColor: "#fff",
     },
   ];
-  public scatterChartType: ChartType = 'scatter';
 
-  public scatterChartColors = [
-    {
-      backgroundColor: ['#36a2eb', '#ff6384', '#ffcd56', '#4bc0c0', '#ffcd56',  '#ff6384', '#36a2eb', '#ffcd56', '#4bc0c0', '#4bc0c0'],
-    },
-  ]
+  scatterChartOptions: ChartOptions = {
+    responsive: true,
+  };
 
-  constructor() { }
+  scatterChartType: ChartType = "scatter";
 
-  ngOnInit() {
-  }
+  constructor() {}
 
+  ngOnInit() {}
 }
