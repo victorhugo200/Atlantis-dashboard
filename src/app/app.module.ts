@@ -7,6 +7,7 @@ import { HomeModule } from './features/home/home.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MAT_DATE_LOCALE } from '@angular/material';
 import { ChartsModule, ThemeService } from 'ng2-charts';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -19,6 +20,7 @@ import { ChartsModule, ThemeService } from 'ng2-charts';
     HomeModule,
     AppRoutingModule,
     ChartsModule,
+    HttpClientModule,
     BrowserAnimationsModule
   ],
   providers: [

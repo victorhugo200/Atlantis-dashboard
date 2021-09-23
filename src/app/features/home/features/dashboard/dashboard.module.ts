@@ -5,6 +5,7 @@ import { ListaCardModule } from './components/lista-card/lista-card.module';
 import { ChartPieModule } from 'src/app/shared/components/chart-pie/chart-pie.module';
 import { ChartBarModule } from 'src/app/shared/components/chart-bar/chart-bar.module';
 import { ChartDoughnutModule } from 'src/app/shared/components/chart-doughnut/chart-doughnut.module';
+import { ChartLinearScaleModule } from 'src/app/shared/components/chart-linear-scale/chart-linear-scale.module';
 
 
 
@@ -15,7 +16,8 @@ import { ChartDoughnutModule } from 'src/app/shared/components/chart-doughnut/ch
     ListaCardModule,
     ChartPieModule,
     ChartBarModule,
-    ChartDoughnutModule
+    ChartDoughnutModule,
+    ChartLinearScaleModule
     
   ],
   exports: [DashboardComponent]

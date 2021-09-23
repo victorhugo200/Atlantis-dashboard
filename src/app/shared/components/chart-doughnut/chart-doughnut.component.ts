@@ -14,7 +14,7 @@ export class ChartDoughnutComponent implements OnInit {
     [53, 30, 17]
   ];
   doughnutChartType: ChartType = 'doughnut';
-  pieChartColors = [
+  doughnutChartColors = [
     
     {
       backgroundColor: ['#36a2eb', '#ff6384', '#ffcd56', '#4bc0c0'],
