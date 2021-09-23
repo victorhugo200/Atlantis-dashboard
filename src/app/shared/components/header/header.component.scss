@@ -1,3 +1,4 @@
+@import '../../../../assets/scss/breakpoints';
 .menu {
     position: fixed;
     background: transparent;
@@ -61,10 +62,7 @@
         width: 44px;
         height: 44px;
     }
-}
-
-.principal {
-    background-image: url('../../../assets/img/background/effect-ondark.png');
-    min-height: 100vh;
-    background-repeat: no-repeat;
+    @include reponsivo(m) {
+        display: none;
+    }
 }

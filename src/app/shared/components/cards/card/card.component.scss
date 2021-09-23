@@ -1,0 +1,56 @@
+@import '../../../../assets/scss/variaveis';
+.card {
+    background: $surface-b;
+    height: 6rem;
+    border-radius: 12px;
+    padding: 14px 12px;
+    position: relative;
+    max-width: 378px;
+    width: 100%;
+    overflow: hidden;
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-info {
+        &__title {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+        }
+        &-content {
+            display: flex;
+            align-items: center;
+        }
+        &-overview {
+            height: 32px;
+            width: 80px;
+            border-radius: 6px;
+            padding: 0.5em;
+            margin-top: 0.5em;
+            margin-right: 12px;
+            display: flex;
+            align-items: center;
+            .icon {
+                margin-right: 5px;
+            }
+            &.RED {
+                background-color: #FC6161;
+                box-shadow: 0px 6px 20px rgb(252 97 97 / 30%);
+            }
+            &.GREEN {
+                background-color: #0BD18A;
+                box-shadow: 0px 6px 20px rgb(11 209 138 / 30%)
+            }
+            &.BLUE {
+                background-color: #00D0DE;
+                box-shadow: 0px 6px 20px rgb(0 208 222 / 30%);
+            }
+        }
+        &__subtitle {
+            font-size: 30px;
+            line-height: 35px;
+        }
+    }
+}
