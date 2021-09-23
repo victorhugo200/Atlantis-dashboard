@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Card } from 'src/app/shared/components/card/card';
+import { Card } from 'src/app/shared/components/cards/card/card';
+
 
 @Component({
   selector: 'app-lista-card',

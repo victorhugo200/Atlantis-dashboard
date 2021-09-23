@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import { map } from 'rxjs/operators';
-import { TypeImg } from 'src/app/shared/components/card/card';
+import { TypeImg } from 'src/app/shared/components/cards/card/card';
+
 import { MoeadasService } from 'src/app/shared/services/moeadas.service';
 
 @Component({

@@ -1,6 +1,7 @@
 <div class="dashboard">
     <app-lista-card [lista]="x"></app-lista-card>
     <div class="lista">
+
         <div class="card">
             <h5 class="card__title">Porcentagem de variação</h5>
             <div class="card-chart">
@@ -8,12 +9,7 @@
             </div>
         </div>
 
-        <div class="card">
-            <h5 class="card__title">Bar Chart</h5>
-            <div class="card-chart">
-                <app-chart-bar></app-chart-bar>
-            </div>
-        </div>
+        <app-card-chart-bar title="Bar chart"></app-card-chart-bar>
 
         <div class="card">
             <h5 class="card__title">Doughnut Chart</h5>

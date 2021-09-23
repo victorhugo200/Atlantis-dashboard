@@ -6,6 +6,7 @@ import { ChartPieModule } from 'src/app/shared/components/chart-pie/chart-pie.mo
 import { ChartBarModule } from 'src/app/shared/components/chart-bar/chart-bar.module';
 import { ChartDoughnutModule } from 'src/app/shared/components/chart-doughnut/chart-doughnut.module';
 import { ChartLinearScaleModule } from 'src/app/shared/components/chart-linear-scale/chart-linear-scale.module';
+import { CardChartBarModule } from 'src/app/shared/components/cards/card-chart-bar/card-chart-bar.module';
 
 
 
@@ -14,6 +15,7 @@ import { ChartLinearScaleModule } from 'src/app/shared/components/chart-linear-s
   imports: [
     CommonModule,
     ListaCardModule,
+    CardChartBarModule,
     ChartPieModule,
     ChartBarModule,
     ChartDoughnutModule,
