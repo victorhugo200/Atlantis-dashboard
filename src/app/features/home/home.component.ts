@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Card, TypeImg } from 'src/app/shared/components/card/card';
+
 
 @Component({
   selector: 'app-home',
