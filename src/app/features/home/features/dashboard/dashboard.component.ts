@@ -25,6 +25,6 @@ export class DashboardComponent implements OnInit {
       .subscribe((moedas) => {
         this.x = moedas;
       });
-    }, 20000);
+    }, 15000);
   }
 }
