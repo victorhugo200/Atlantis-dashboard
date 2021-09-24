@@ -69,3 +69,42 @@
         display: none;
     }
 }
+
+.menu-mobile {
+    display: none;
+    @include reponsivo(lp) {
+        display: block;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        padding: 16px;
+        background: transparent;
+        color: white;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 20;
+    }
+}
+
+.nav-mobile {
+    height: 100vh;
+    position: fixed;
+    width: 50%;
+    background: #3a3838a3;
+    z-index: 10;
+    padding-top: 110px;
+    padding-left: 40px;
+    &-lista {
+        .item {
+            font-size: 18px;
+            margin-bottom: 50px;
+            .icone {
+                margin-right: 20px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
