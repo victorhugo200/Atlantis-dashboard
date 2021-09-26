@@ -9,6 +9,7 @@ import { DashboardModule } from './features/dashboard/dashboard.module';
 
 import { HeaderModule } from 'src/app/shared/components/structure/header/header.module';
 import { FooterModule } from 'src/app/shared/components/structure/footer/footer.module';
+import { AlertModule } from 'src/app/shared/components/alert/alert.module';
 
 
 
@@ -20,7 +21,8 @@ import { FooterModule } from 'src/app/shared/components/structure/footer/footer.
     MatIconModule,
     HeaderModule,
     DashboardModule,
-    FooterModule
+    FooterModule,
+    AlertModule
   ],
   exports: [HomeComponent]
 })
