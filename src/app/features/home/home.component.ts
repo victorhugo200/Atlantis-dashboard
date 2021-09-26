@@ -7,12 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  
+  openAlert = true;
 
   
   constructor() { }
 
   ngOnInit() {
+
+
+    setTimeout(() => {
+      this.openAlert = false
+    } , 5000);
   }
 
 }
