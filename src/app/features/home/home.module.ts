@@ -6,7 +6,10 @@ import { MatIconModule } from '@angular/material';
 import { HomeRoutingModule } from './home-routing.module';
 
 import { DashboardModule } from './features/dashboard/dashboard.module';
+
 import { HeaderModule } from 'src/app/shared/components/structure/header/header.module';
+import { FooterModule } from 'src/app/shared/components/structure/footer/footer.module';
+
 
 
 @NgModule({
@@ -16,7 +19,8 @@ import { HeaderModule } from 'src/app/shared/components/structure/header/header.
     HomeRoutingModule,
     MatIconModule,
     HeaderModule,
-    DashboardModule
+    DashboardModule,
+    FooterModule
   ],
   exports: [HomeComponent]
 })

@@ -7,26 +7,37 @@
 
             <ul class="menu__lista">
                 <li class="menu__lista__item">
-                    <i class="pi pi-home icone"></i>
+                    <a routerLink="['']">
+                        <i class="pi pi-home icone"></i>
+                    </a>
                 </li>
                 <li class="menu__lista__item">
-                    <i class="pi pi-star icone"></i>
+                    <a routerLink="['']">
+                        <i class="pi pi-star icone"></i>
+                    </a>
+                </li>
+                <li class="menu__lista__item">
+                    <a routerLink="['']">
+                        <i class="pi pi-fw pi-compass icone"></i>
+                    </a>
 
                 </li>
                 <li class="menu__lista__item">
-                    <i class="pi pi-fw pi-compass icone"></i>
+                    <a routerLink="['']">
+                        <i class="pi pi-fw pi-briefcase icone"></i>
+                    </a>
 
                 </li>
                 <li class="menu__lista__item">
-                    <i class="pi pi-fw pi-briefcase icone"></i>
+                    <a routerLink="['']">
+                        <i class="pi pi-fw pi-align-left icone"></i>
+                    </a>
 
                 </li>
                 <li class="menu__lista__item">
-                    <i class="pi pi-fw pi-align-left icone"></i>
-
-                </li>
-                <li class="menu__lista__item">
-                    <i class="pi pi-fw pi-download icone"></i>
+                    <a routerLink="['']">
+                        <i class="pi pi-fw pi-download icone"></i>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -35,30 +46,45 @@
     </nav>
 
     <button class="menu-mobile">
-        <i class="pi " [ngClass]="{'pi-align-justify': !toggleMenu, 'pi-times': toggleMenu}" (click)="toggleMenu = !toggleMenu"></i>
+        <i
+            class="pi "
+            [ngClass]="{'pi-align-justify': !toggleMenu, 'pi-times': toggleMenu}"
+            (click)="toggleMenu = !toggleMenu"
+        ></i>
     </button>
 
     <nav class="nav-mobile" *ngIf="toggleMenu">
         <ul class="nav-mobile-lista">
             <li class="item">
-                <i class="pi pi-home icone"></i>
-                <span>Dashboard</span>
+                <a routerLink="['']">
+                    <i class="pi pi-home icone"></i>
+                    <span>Dashboard</span>
+                </a>
             </li>
             <li class="item">
-                <i class="pi pi-star icone"></i>
-                <span>Favoritos</span>
+                <a routerLink="['']">
+                    <i class="pi pi-star icone"></i>
+                    <span>Favoritos</span>
+                </a>
             </li>
             <li class="item">
-                <i class="pi pi-fw pi-compass icone"></i>
-                <span>Utilies</span>
+                <a routerLink="['']">
+                    <i class="pi pi-fw pi-compass icone"></i>
+                    <span>Utilies</span>
+                </a>
             </li>
             <li class="item">
-                <i class="pi pi-fw pi-briefcase icone"></i>
-                <span>Pages</span>
+                <a routerLink="['']">
+                    <i class="pi pi-fw pi-briefcase icone"></i>
+                    <span>Pages</span>
+
+                </a>
             </li>
             <li class="item">
-                <i class="pi pi-fw pi-align-left icone"></i>
-                <span>Hierarchy</span>
+                <a routerLink="['']">
+                    <i class="pi pi-fw pi-align-left icone"></i>
+                    <span>Hierarchy</span>
+                </a>
             </li>
         </ul>
     </nav>
