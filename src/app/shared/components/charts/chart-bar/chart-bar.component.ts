@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ChartOptions } from 'chart.js';
+import { DataBar } from 'src/app/shared/models/chart-bar.model';
 
 @Component({
   selector: 'app-chart-bar',
@@ -17,14 +18,12 @@ export class ChartBarComponent implements OnInit {
   barChartLegend = true;
   barChartPlugins = [];
 
-  @Input() barChartData = [
-    { data: [5500, 5900, 6000, 8100, 8600, 8050, 7200], label: 'Company A', backgroundColor: '#ff6384', borderColor: '#fff' },
-    { data: [4800, 4800, 4600, 7900, 9600, 8870, 9400], label: 'Company B',  backgroundColor: '#36a2eb', borderColor: '#fff' }
-  ];
+  @Input() barChartData: Array<DataBar>;
 
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

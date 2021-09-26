@@ -1,3 +1,4 @@
+@import '../../../../../assets/scss/breakpoints';
 .card {
     max-width: 530px;
     height: 352px;
@@ -17,5 +18,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    @include responsivo(m) {
+        max-width: 350px;
+        width: 350px;
+        text-align: center;
     }
 }

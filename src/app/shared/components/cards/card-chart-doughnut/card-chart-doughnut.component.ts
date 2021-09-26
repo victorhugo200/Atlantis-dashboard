@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { MultiDataSet } from 'ng2-charts';
 
 @Component({
   selector: 'app-card-chart-doughnut',
@@ -9,6 +10,7 @@ export class CardChartDoughnutComponent implements OnInit {
 
 
   @Input() title: string;
+  @Input() charData: MultiDataSet;
   constructor() { }
 
   ngOnInit() {

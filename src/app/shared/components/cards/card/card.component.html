@@ -6,7 +6,7 @@
             </h3>
             <div class="card-info-content">
                 <div class="card-info-overview {{ config.typeImg}}">
-                    <div class="pi {{ config.icon }} icon"></div>
+                    <div class="pi icon" [ngClass]="{'pi-arrow-up': config.fee >= 0, 'pi-arrow-down': config.fee < 0}"></div>
                     <span class="text">{{ config.fee | percent: '1.2'}}</span>
                 </div>
                 <span class="card-info__subtitle" *ngIf="config.type  === 'percent'"> {{ config.number | percent: '1.2'}}</span>
