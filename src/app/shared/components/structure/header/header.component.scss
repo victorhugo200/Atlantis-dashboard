@@ -84,6 +84,7 @@
         font-size: 24px;
         cursor: pointer;
         z-index: 20;
+        outline: none;
     }
 }
 
@@ -91,20 +92,38 @@
     height: 100%;
     position: fixed;
     width: 50%;
-    background: #3a3838a3;
+    background: #3a3838f5;
     z-index: 10;
     padding-top: 110px;
     padding-left: 40px;
+    animation: menu .5s ease forwards;
+    @include responsivo(m) {
+        width: 80%;
+    }
     &-lista {
         .item {
             font-size: 18px;
             margin-bottom: 50px;
+            cursor: pointer;
+            transition: .2s ease;
             .icone {
                 margin-right: 20px;
             }
             &:last-child {
                 margin-bottom: 0;
             }
+            &:hover {
+                color: #bfb0b0;
+            }
         }
+    }
+}
+
+@keyframes menu {
+    from {
+        transform: translate3d(-30px, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
     }
 }
