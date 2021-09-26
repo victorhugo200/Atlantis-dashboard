@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardChartDoughnutComponent } from './card-chart-doughnut.component';
-import { ChartDoughnutModule } from '../../chart-doughnut/chart-doughnut.module';
+import { ChartDoughnutModule } from '../../charts/chart-doughnut/chart-doughnut.module';
+
 
 @NgModule({
   declarations: [CardChartDoughnutComponent],

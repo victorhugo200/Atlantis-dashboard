@@ -8,18 +8,18 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CardChartPieComponent implements OnInit {
 
   @Input() title: string;
-  data = [10, 30, 50, 80];
+  @Input() chartData = [10, 30, 50, 80];
 
   constructor() { }
 
   ngOnInit() {
     
     setInterval(() => {
-    this.data = this.data.map((numero) => {
+    this.chartData = this.chartData.map((numero) => {
      const  result = ((numero / 100) * 80).toFixed(2);
      return +result;
     });
-    }, 15000)
+    }, 15000);
   }
 
 }

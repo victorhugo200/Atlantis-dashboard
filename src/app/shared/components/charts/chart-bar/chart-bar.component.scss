@@ -1,0 +1,9 @@
+@import '../../../../../assets/scss/breakpoints';
+.chart {
+    position: relative;
+    height: 100%;
+    width: 480px;
+    @include responsivo(m) {
+        width: 342px;
+    }
+}

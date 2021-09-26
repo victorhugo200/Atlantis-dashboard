@@ -9,7 +9,7 @@
     max-width: 378px;
     width: 100%;
     overflow: hidden;
-    @include reponsivo(lp) {
+    @include responsivo(lp) {
         width: 530px;
         max-width: 530px;
     }
@@ -23,7 +23,7 @@
             font-weight: 500;
             font-size: 12px;
             line-height: 14px;
-            @include reponsivo(lp) {
+            @include responsivo(lp) {
                 font-size: 14px;
             }
         }
@@ -60,5 +60,9 @@
             font-size: 30px;
             line-height: 35px;
         }
+    }
+    @include responsivo(m) {
+        width: 350px;
+        max-width: 350px;
     }
 }
