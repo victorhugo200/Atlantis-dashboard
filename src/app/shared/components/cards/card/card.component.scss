@@ -33,7 +33,8 @@
         }
         &-overview {
             height: 32px;
-            width: 80px;
+            width: 100%;
+            max-width: 90px;
             border-radius: 6px;
             padding: 0.5em;
             margin-top: 0.5em;
